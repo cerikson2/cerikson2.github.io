@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me </title>
+    <style>
+        *{
+            font-size: 18px; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        }
+
+        button {
+            color:white;
+            background: blueviolet;
+            font-size: 24px; 
+            padding: 15px;
+            border: 2px solid white; 
+            border-radius: 10px; 
+        }
+
+        body { background: #1fff01}
+        label { font-weight: bold;}
+        hl {font-size: 28px; color: white}
+        textarea {min-width: 250px; min-height: 50px; }
+        input, textarea { max-width: 250px; ,min-height: 50px;}
+        form {min-width: 550px; margin-bottom: 20px;}
+        .rqd {color: red; font-weight: normal;}
+        .flwbl {font-weight: normal; }
+        #flxwupy {margin-left: -125px} 
+    </style>
+</head>
+<body>
+    <center><h1>Contact Me</h1></center>
+
+    <form action="#" method="post" id="contactform"
+    style="text-align:center;" onsumbit="alert(Not Implemented yet);">
+        </form>
+        <fieldset>
+            <label for="myname">Username: <span class="rqd">*</span>  </label> <br/> <br/>
+            <input type="text" name="myname" od="myname" required.> <br/> <br/>
+
+            <label for="myemail">Password: <span class="rqd">*</span> </label> <br/> <br/>
+            <input type="email" name="myemail" id="myemail" required> <br/> <br/>
+
+            <label for="subject">Date of Birth: <span class="rqd">*</span>  </label> <br/> <br/>
+            <input type="text" name="Subject" od="Subject" 
+            placeholder="0/0/0" required> <br/> <br/>
+            
+           
+            <select name="priority" id="priority" required> 
+                <option disabled selected value.--Select an option></option>
+                <input type="submit" value="submit" id="sbutton">
+
+                <label for="attach">Attachments: </label> <br/> <br/>
+                <input type="file" name="attach" id="attach" multiple> <br/> <br/>
+                <label for="flwup">Example of radio buttons </label> <br/> <br/>
+                <input type="radio" name="flwup" id="flwupy" value="yes">
+                <label for="flwupy" class="flwlbl"> 1</label> <br/> <br/>
+                <input type="radio" name="flwup" id="flwupy" value="yes">
+                <label for="flwupy" class="flwlbl"> 2</label> <br/> <br/>
+                <input type="radio" name="flwup" id="flwupy" value="yes">
+                <label for="flwupy" class="flwlbl"> 3</label> <br/> <br/>
+
+                <input type="hidden" id="humansOnly" name="humansOnly">
+        
+                 <button>Submit</button>
+            </fieldset>
+</body>
+</html>

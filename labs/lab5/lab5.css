@@ -1,0 +1,9 @@
+body { background: #1fff01}
+label { font-weight: bold;}
+hl {font-size: 28px; color: white}
+textarea {min-width: 250px; min-height: 50px; }
+input, textarea { max-width: 250px; ,min-height: 50px;}
+form {min-width: 550px; margin-bottom: 20px;}
+.rqd {color: red; font-weight: normal;}
+.flwbl {font-weight: normal; }
+#flxwupy {margin-left: -125px} 
