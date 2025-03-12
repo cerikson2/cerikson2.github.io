@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+body { background: #555}
+
+
+</style>
+
 <body>
-    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Images</th>
+                <th>Videos</th>
+                <th>Audio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <img src="1.jpg" alt="img" width="303" height="252"> </td>
+                <td> 
+                        <video src="dog.mp4" width="400" height="200" 
+                        preload controls
+                        poster="https://picsum.photos/600/400">
+                            Could not load video.
+                        </video>
+                        <figcaption> cool video </figcaption>
+                </figure>
+                </td>
+                <td> <audio src="yesterday.mp3" controls> 
+                    Could not load audio.
+                </audio>   
+                </td>
+            </tr>
+            <tr>
+                <td><img src="2.jpg" alt="img" width="303" height="252"></td>
+                <td>
+                    <video src="000005.mp4" width="400" height="200" 
+                    preload controls
+                    poster="https://picsum.photos/600/400">
+                     Could not load video.
+                    </video>
+                    <figcaption> cool video </figcaption>
+                </figure>
+                </td>
+                <td>
+                    <audio src="slowlife.mp3" controls> 
+                        Could not load audio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="3.jpg" alt="img" width="303" height="252"></td>
+                <td>
+                    <video src="banana.mp4" width="400" height="200" 
+                        preload controls
+                        poster="https://picsum.photos/600/400">
+                        Could not load video.
+                        </video>
+                        <figcaption> cool video </figcaption>
+                </figure>
+                </td>
+                <td>
+                    <audio src="prism.mp3" controls> 
+                        Could not load audio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="4.jpg" alt="img" width="303" height="252"></td>
+                <td>
+                    <video src="w5.mp4" width="400" height="200" 
+                        preload controls
+                        poster="https://picsum.photos/600/400">
+                            Could not load video.
+                        </video>
+                        <figcaption> cool video </figcaption>
+                </figure>
+                </td>
+                <td>
+                    <audio src="hearty.mp3" controls> 
+                        Could not load audio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="5.jpg" alt="img" width="303" height="252"></td>
+                <td>
+                    <video src="Water_66___4K_res.mp4" width="400" height="400" 
+                        preload controls
+                        poster="https://picsum.photos/600/400">
+                            Could not load video.
+                        </video>
+                        <figcaption> cool video </figcaption>
+                </figure>
+                </td>
+                <td>
+                    <audio src="dawnofchange.mp3" controls> 
+                        Could not load audio.
+                    </audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
