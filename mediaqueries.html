@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Media query sizes:
+        320px-480px: Small mobile
+        481-768px: Ipad/Tablets
+        769-1024px: Small screens, laptops
+        1025-1200px: Desktop, Large Screens
+        1201px+: Extra large
+        */
+        nav {overflow: hidden; background: #333}
+        nav a{
+            float: left;
+            display:block;
+            color: white; 
+            text-align: center; 
+            padding: 15px; 
+        }
+        nav a:hover {background: #ddd; color:black;}
+
+        @media screen and (max width: 768px) {
+            nav a { float: none; width: 100%; }
+            #device::before { content: 'Mobile' !important; }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Here's my navbar</h1>
+    <p>Media queries allow for a responsive resizing of elements based on screen width. </p>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <h2 id="device"></h2>
+</body>
+</html>
