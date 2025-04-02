@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #edf0f5;
+        }
+        .signup-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: left;
+        }
+        h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        p {
+            font-size: 14px;
+            color: #606770;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .birthday-selects {
+            display: flex;
+            gap: 5px;
+        }
+        .gender {
+            display: flex;
+            gap: 15px;
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 10px;
+            background: #659d50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .signup-btn:hover {
+            background: #45a049;
+        }
+        .terms {
+            font-size: 12px;
+            color: #606770;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <p>It's free and always will be.</p>
+        <form>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Your Email">
+            <input type="email" placeholder="Re-enter Email">
+            <input type="password" placeholder="New Password">
+            <p>Birthday</p>
+            <div class="birthday-selects">
+                <select>
+                    <option>Month</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                </select>
+                <select>
+                    <option>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+                <select>
+                    <option>Year</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                </select>
+            </div>
+            <div class="gender">
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Male</label>
+            </div>
+            <p class="terms">By clicking Sign Up, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</p>
+            <button class="signup-btn">Sign Up</button>
+        </form>
+    </div>
 </body>
 </html>
+
+
