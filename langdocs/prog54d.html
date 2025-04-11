@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="number" id="numA">
+    <input type="number" id="numB">
+    <input type="number" id="numC">
+    <button onclick="calculate()">Calculate</button>
+    <p id="out"></p>
+
+    ><script> 
+        function calculate() {
+            let A = Number(document.getElementById("numA").value);
+            let B = Number(document.getElementById("numB").value);
+            let C = Number(document.getElementById("numC").value);
+
+            let proot = (-B + Math.sqrt())  
+            let nroot = (-B - Math.sqrt())
+
+            let out = document.getElementById("out"); 
+            out.innerText = proot + "   " + nroot; 
+        }
+    </script>
 </body>
 </html>
