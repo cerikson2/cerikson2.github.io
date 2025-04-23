@@ -1,18 +1,24 @@
-document.getElementById('mortgage-form').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-
-    const principal = parseFloat(document.getElementById('principal').value);
-    const interestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
-    const years = parseInt(document.getElementById('years').value);
-    const monthlyPayment = parseFloat(document.getElementById('monthly-payment').value);
-
-   
-    const months = years * 12;
-    const monthlyInterestRate = interestRate / 12;
+function calculate() {
+    const PP = parseFloat(document.getElementById('principal').value);
+    const r = parseFloat(document.getElementById('interest').value) / 100;
+    const t = parseFloat(document.getElementById('years').value);
+    const m = parseFloat(document.getElementById('payment').value);
+    const n = 12;
 
 
-    const remainingBalance = principal * ((Math.pow(1 + monthlyInterestRate, months) - Math.pow(1 + monthlyInterestRate, months - 1)) / (Math.pow(1 + monthlyInterestRate, months) - 1)) - monthlyPayment;
+    const BB = PP * Math.pow(1 + r / n, n * t) - 
+                m * (Math.pow(1 + r / n, n * t) - 1) / (r / n);
 
-    
-    document.getElementById('balance').textContent = `$${remainingBalance.toFixed(2)}`;
-});
+    document.getElementById('result').innerHTML = 
+        `Remaining Loan Balance: $${BB.toFixed(2)}`;
+}
+
+function reset() {
+    document.getElementById('principal').value = "";
+    document.getElementById('interest').value = "";
+    document.getElementById('years').value = "";
+    document.getElementById('payment').value = "";
+    document.getElementById('result').innerHTML = "";
+}
+
+
