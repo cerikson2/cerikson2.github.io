@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script> 
+     function randInt(min, max) { 
+        return Math.round(Math.random() * max) + min; 
+     }
+
+     function getAreaAndPerim(length, width) { 
+        let area = length * width; 
+        let perim = 2 * length + 2 * width; 
+        return [area, perim];
+     }
+
+     let num1 = randInt (1,10); 
+     let num2 = randint (2,20); 
+     let ap = getAreaAndPerim(num1, num2); 
+     let area = ap [0]; 
+     let perim = ap[1]; 
+     document.writeln("Length; " + num1 + "<br>"
+     )
+   </script>
+</body>
+</html>
