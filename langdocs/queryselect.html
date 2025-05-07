@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul> 
+        <li> Test 1</li>
+        <li> Test 2 </li>
+        <li> Test 3</li>
+    </ul>
+
+    <p id="wow">Some text here</p>
+
+    <h1 class="test">Heading 1</h1>
+    <h2 class="test">Heading 2</h1>
+    <h3 class="test">Heading 3</h1>
+
+  <script> 
+    let h1 = document.querySelector(".test"); 
+     h1.innerHTML = "Updated Heading"; 
+
+    let p = document.querySelector("#wow"); 
+    p.textContent = "Paragraph"; 
+
+    let allHtags = document.querySelectorAll(".test"); 
+    for (let i = 0; i < allHtags.length; i++) { 
+        allHtags[i].style.backgroundColor = "green"; 
+    }
+
+    let allHtagsCl = document.getElementsByClassName("test"); 
+    for (let i = 0; i < allHtagsCl.length; i++) {
+        allHtagsCl[i].style.color = "white"; 
+    }
+
+    let lis = document.querySelectorAll("li"); 
+  </script>
+</body>
+</html>
