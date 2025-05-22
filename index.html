@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body { font-family: Arial; }
-        h1,h2,h3 {font-family: Helvetica;}
-        #maindiv {background-color: gainsboro;}
-        /* backround and backround-color do the same thing */
-
-        a {
-            font-weight: bold; 
-            color:rgb(0,150,50)
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page 1</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="maindiv">
-        <h1> This is my first webpage!</h1>
-        <p>Hello, world!</p>
-        <a>href="#filebrowser"> To Class files</a>
-
-        <h2> Subheading!</h2>
-        <p> More text</p>
+  <div class="container">
+    <h1>Charlie Erikson - Portfollio</h1>
+    <hr> 
+    <div class="image-placeholder">
+      <img src="images/face.jpg" alt="Me"> 
     </div>
-    
-    <div>
-        <h2> id="filebrowser"> Class Files</h2>
-        <ul>
-            <li><a> href="practices.html">HTML Practices</a>&nbsp;</li>
-            <li><a> href="text.html" >HTML Text</a>&nbsp;</li>
-            <li><a> href="eggrecipe.html">Egg Recipe</a>&nbsp;</li>
-            <li><a> href="#" > About Page </a>&nbsp;</li>
-            <li>
-            <a href="cityfarmer/" target="_blank">Cityfarmer
-            <li><a> href="cityfarmer/index.html">Index </a>&nbsp;</li>
-            <li><a> href="cityfarmer/cityfarmer">Main Page </a>&nbsp;</li>
-            </ul>
-        </ul>
-        <blockquote>"This is my quote" -Me</blockquote>
-        <a> href="https://cerikson2.github.io" Github homepage</a>
-        <a> href="mailto:test@test.com"> Email me</a>
-        <a> href="tel:+123456789</a>
+    <div class="text-box"> 
+        <h2>Interests</h2>
+        <p>I have many different interests. I am interested in sports, video games, food, computers, and media (American Shows/Movies and Amines.) 
+            I like to play video games and watch sports in my free time. I enjoy spending time with my family. 
+             Playing Sports with friends/family. Also spending time with my friends.  </p>
+        <h3>Experience</h3> 
+        <ul style="list-style-type:none;"> <!--Used code from W3 Schools-->
+        <li> House Keeping</li>
+        <li> Yard Work </li>
+        <li> E-Sports  </li>
+        <li> Web Design </li>
+        <li> Game Design </li>
+        <li> Music Production </li>
+        <li> Music Mixing </li>
+        <li> Sports </li>
+        <li> Physical Labor </li>
+        <li> Pool Maintnence </li> 
+        <li> Cooking (Kinda) </li> 
+        <li> Baking (Kinda) </li>
+    </ul>
     </div>
+      </div>
+    <div class="arrow next" onclick="goTo('page2.html')">&#8594;</div> <!--Used code from W3 Schools-->
+  </div>
+  <script src="script.js"></script> 
 </body>
 </html>
