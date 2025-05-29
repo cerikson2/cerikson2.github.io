@@ -20,9 +20,9 @@ body {
   text-align: center;
   position: relative;
   padding: 20px;
-  background: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: #e2488e
+  border-radius 10px;
 }
 
 .text-box {
