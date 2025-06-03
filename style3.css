@@ -12,6 +12,10 @@ body {
   text-align: center;
 }
 
+img {
+  border: 5px solid #ffffff;
+}
+
 .media-page {
   padding: 40px 20px;
 }
@@ -22,18 +26,14 @@ h1 {
 }
 
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
+  width: 500px; 
+  gap: 30px;
   margin: 0 auto;
 }
 
-.image-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+figcaption {  
+  color: white;
+  font-size: 50px
 }
 
 .arrow {

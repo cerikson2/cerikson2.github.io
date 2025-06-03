@@ -25,7 +25,9 @@ body {
   border-radius: 10px;
 }
 
-
+img {
+  border: 5px solid #8050EB;
+}
 
 .text-box {
   margin: 20px 0;
